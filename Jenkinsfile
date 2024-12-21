@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
+                git branch: 'main', url: 'https://github.com/Octet3290/devops-project'
                 git 'https://github.com/Octet3290/devops-project' 
             }
         }
